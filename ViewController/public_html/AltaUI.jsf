@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <af:document title="Home.jsf" id="d1">
+    <af:form id="f1">
+      <af:pageTemplate viewId="/oracle/templates/tabletFirstTemplate.jspx" id="pt1">
+        <f:facet name="header"/>
+        <f:facet name="status"/>
+        <f:facet name="appNav"/>
+        <f:facet name="globalLinks"/>
+        <f:facet name="footer"/>
+        <f:facet name="center">
+          <af:panelHeader text="Assigned Team Members" id="ph1">
+            <f:facet name="context"/>
+            <f:facet name="menuBar"/>
+            <f:facet name="toolbar"/>
+            <f:facet name="legend"/>
+            <f:facet name="info"/>
+            <af:panelFormLayout id="pfl1">
+              <f:facet name="footer"/>
+              <af:inputText id="it1" label="Owner"/>
+              <af:inputText id="it2" label="Owner Email"/>
+              <af:inputText id="it3" label="Tester"/>
+              <af:inputText id="it4" label="Tester Email"/>
+            </af:panelFormLayout>
+          </af:panelHeader>
+        </f:facet>
+        <f:facet name="start"/>
+        <f:facet name="end"/>
+      </af:pageTemplate>
+    </af:form>
+  </af:document>
+</f:view>
